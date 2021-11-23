@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">HealthIt</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="quotes">
+        <item>Laughing is good for the heart and can increase blood flow by 20 percent.</item>
+        <item>Your skin works hard. Not only is it the largest organ in the body, but it regulates your temperature and defends against disease and infection.</item>
+        <item>Always look on the bright side: being an optimist can help you live longer.</item>
+        <item>Exercise will give you more energy, even when you’re tired.</item>
+        <item>Sitting and sleeping are great in moderation, but too much can increase your chances of an early death.</item>
+        <item>A lack of exercise now causes as many deaths as smoking.</item>
+        <item>Between 2000 and 2015, the average global life expectancy increased by five years.</item>
+        <item>Less than 1% of Americans ride their bike to work, while 50% of Copenhagen residents bike to work or school.</item>
+        <item>Learning a new language or playing a musical instrument gives your brain a boost.</item>
+        <item>Feeling stressed? Read. Getting lost in a book can lower levels of cortisol, and other unhealthy stress hormones, by 68%.</item>
+        <item>Maintaining good relationships with your friends and family, reduces harmful levels of stress and boosts your immune system.</item>
+        <item>Drinking coffee can reduce the risk of depression, especially in women.</item>
+        <item>Smelling rosemary may increase alertness and improve memory so catch a whiff before a test or important meeting.</item>
+        <item>Swearing can make you feel better when you’re in pain.</item>
+        <item>Writing in a journal can make you a happier person!</item>
+        <item>Chewing gum makes you more alert, relieves stress and reduces anxiety levels.</item>
+        <item>Yoga can boost your cognitive function and lower stress.</item>
+        <item>Walking outside – or spending time in green space – can reduce negative thoughts and boost self-esteem.</item>
+        item>
+        <item>Chocolate is good for your skin; its antioxidants improve blood flow and protect against UV damage.</item>
+
+        <item>Eating oatmeal provides a serotonin boost to calm the brain and improve your mood.</item>
+
+        <item>Women below the age of 50 need twice the amount of iron per day as men of the same age.</item>
+
+        <item>The amino acid found in eggs can help improve your reflexes.</item>
+
+        <item>Extra virgin olive oil is the healthiest fat on the planet.</item>
+
+        <item>Vitamin D is as important as calcium in determining bone health, and most people don’t get enough of it.</item>
+
+        <item>The body has more than 650 muscles.</item>
+
+        <item>Sleeping naked can help you burn more calories.</item>
+        <item>Even at rest, muscle is three times more efficient at burning calories than fat.</item>
+        <item>Regular activity can ease the severity and reduce the frequency of lower back pain.</item>
+        <item>Exercising regularly can increase your lifespan by keeping your DNA healthy and young.</item>
+        <item>Although bodies stop growing, noses and ears will not.</item>
+
+    </string-array>
+    <string-array name="cities">
+        <item>Mumbai</item>
+        <item>Navi Mumbai</item>
+        <item>Pune</item>
+        <item>Nashik</item>
+        <item>Kolhapur</item>
+        <item>Solapur</item>
+        <item>Delhi</item>
+        <item>Varanasi</item>
+        <item>Ranchi</item>
+        <item>Ujjain</item>
+        <item>Ahmedabad</item>
+        <item>Prayagraj</item>
+        <item>Patna</item>
+        <item>Aurangabad</item>
+        <item>Ayodhya</item>
+        <item>Darjeeling</item>
+        <item>Chennai</item>
+        <item>Kolkata</item>
+        <item>Bengaluru</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+
+    </string-array>
+
+</resources>

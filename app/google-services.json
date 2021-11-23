@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "254584044812",
+    "firebase_url": "https://healthit-eda4b-default-rtdb.firebaseio.com",
+    "project_id": "healthit-eda4b",
+    "storage_bucket": "healthit-eda4b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:254584044812:android:39661ad637ebcb30589d29",
+        "android_client_info": {
+          "package_name": "com.example.healthit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "254584044812-9h7sp3g20br93i0q8nugmigu2qm6sk65.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKdtsrYuunfhzExTLbfWPHIloMdXW02-4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "254584044812-9h7sp3g20br93i0q8nugmigu2qm6sk65.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:254584044812:android:790547cea96306f4589d29",
+        "android_client_info": {
+          "package_name": "com.jmm.healthit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "254584044812-9h7sp3g20br93i0q8nugmigu2qm6sk65.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKdtsrYuunfhzExTLbfWPHIloMdXW02-4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "254584044812-9h7sp3g20br93i0q8nugmigu2qm6sk65.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

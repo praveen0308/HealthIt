@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Apps 2021/HealthIt/app/src/main/res/drawable/bg_news_item.xml" value="0.20833333333333334" />
+        <entry key="..\:/Apps 2021/HealthIt/app/src/main/res/drawable/bg_search_view.xml" value="0.20833333333333334" />
+        <entry key="..\:/Apps 2021/HealthIt/app/src/main/res/drawable/ic_baseline_stars_24.xml" value="0.18518518518518517" />
+        <entry key="..\:/Apps 2021/HealthIt/app/src/main/res/layout/activity_disease_detail.xml" value="0.25" />
+        <entry key="..\:/Apps 2021/HealthIt/app/src/main/res/layout/activity_main.xml" value="0.1921875" />
+        <entry key="..\:/Apps 2021/HealthIt/app/src/main/res/layout/activity_main_dashboard.xml" value="0.1921875" />
+        <entry key="..\:/Apps 2021/HealthIt/app/src/main/res/layout/activity_set_reminder.xml" value="0.1" />
+        <entry key="..\:/Apps 2021/HealthIt/app/src/main/res/layout/fragment_disease_description_dialog.xml" value="0.17083333333333334" />
+        <entry key="..\:/Apps 2021/HealthIt/app/src/main/res/layout/fragment_exercise.xml" value="0.17083333333333334" />
+        <entry key="..\:/Apps 2021/HealthIt/app/src/main/res/layout/fragment_food_tips.xml" value="0.17083333333333334" />
+        <entry key="..\:/Apps 2021/HealthIt/app/src/main/res/layout/fragment_home.xml" value="0.1921875" />
+        <entry key="..\:/Apps 2021/HealthIt/app/src/main/res/layout/fragment_medicine_tips.xml" value="0.17083333333333334" />
+        <entry key="..\:/Apps 2021/HealthIt/app/src/main/res/layout/fragment_news.xml" value="0.1921875" />
+        <entry key="..\:/Apps 2021/HealthIt/app/src/main/res/layout/fragment_profile.xml" value="0.1921875" />
+        <entry key="..\:/Apps 2021/HealthIt/app/src/main/res/layout/fragment_set_reminder.xml" value="0.17083333333333334" />
+        <entry key="..\:/Apps 2021/HealthIt/app/src/main/res/layout/fragment_sign_in.xml" value="0.1921875" />
+        <entry key="..\:/Apps 2021/HealthIt/app/src/main/res/layout/fragment_sign_up.xml" value="0.1921875" />
+        <entry key="..\:/Apps 2021/HealthIt/app/src/main/res/layout/fragment_splash_screen.xml" value="0.1921875" />
+        <entry key="..\:/Apps 2021/HealthIt/app/src/main/res/layout/fragment_upload_profile.xml" value="0.1921875" />
+        <entry key="..\:/Apps 2021/HealthIt/app/src/main/res/layout/template_dashboard_data_item.xml" value="0.33" />
+        <entry key="..\:/Apps 2021/HealthIt/app/src/main/res/layout/template_fact.xml" value="0.1921875" />
+        <entry key="..\:/Apps 2021/HealthIt/app/src/main/res/layout/template_news_item.xml" value="0.33" />
+        <entry key="..\:/Apps 2021/HealthIt/app/src/main/res/layout/template_starred_disease.xml" value="0.1921875" />
+        <entry key="..\:/Apps 2021/HealthIt/app/src/main/res/layout/template_title_image_desc.xml" value="0.22" />
+        <entry key="..\:/Apps 2021/HealthIt/app/src/main/res/menu/menu_nav.xml" value="0.1921875" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
