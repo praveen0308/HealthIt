@@ -28,7 +28,8 @@ public class SearchDisease extends AppCompatActivity {
         arrayAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1,diseaseList);
         binding.lvDisease.setAdapter(arrayAdapter);
         binding.lvDisease.setOnItemClickListener((adapterView, view, i, l) -> {
-            String diseaseName = diseaseList[i];
+            String diseaseName = adapterView.getItemAtPosition(i).toString();
+
 
             Intent intent = new Intent(SearchDisease.this, DiseaseDetail.class);
             intent.putExtra("diseaseName",diseaseName.substring(0, 1).toUpperCase() + diseaseName.substring(1));
