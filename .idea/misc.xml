@@ -9,6 +9,7 @@
         <entry key="..\:/Apps 2021/HealthIt/app/src/main/res/layout/activity_disease_detail.xml" value="0.25" />
         <entry key="..\:/Apps 2021/HealthIt/app/src/main/res/layout/activity_main.xml" value="0.1921875" />
         <entry key="..\:/Apps 2021/HealthIt/app/src/main/res/layout/activity_main_dashboard.xml" value="0.1921875" />
+        <entry key="..\:/Apps 2021/HealthIt/app/src/main/res/layout/activity_news_in_detail.xml" value="0.17083333333333334" />
         <entry key="..\:/Apps 2021/HealthIt/app/src/main/res/layout/activity_set_reminder.xml" value="0.1" />
         <entry key="..\:/Apps 2021/HealthIt/app/src/main/res/layout/fragment_disease_description_dialog.xml" value="0.17083333333333334" />
         <entry key="..\:/Apps 2021/HealthIt/app/src/main/res/layout/fragment_exercise.xml" value="0.17083333333333334" />
@@ -22,6 +23,7 @@
         <entry key="..\:/Apps 2021/HealthIt/app/src/main/res/layout/fragment_sign_up.xml" value="0.1921875" />
         <entry key="..\:/Apps 2021/HealthIt/app/src/main/res/layout/fragment_splash_screen.xml" value="0.1921875" />
         <entry key="..\:/Apps 2021/HealthIt/app/src/main/res/layout/fragment_upload_profile.xml" value="0.1921875" />
+        <entry key="..\:/Apps 2021/HealthIt/app/src/main/res/layout/settings.xml" value="0.15833333333333333" />
         <entry key="..\:/Apps 2021/HealthIt/app/src/main/res/layout/template_dashboard_data_item.xml" value="0.33" />
         <entry key="..\:/Apps 2021/HealthIt/app/src/main/res/layout/template_fact.xml" value="0.1921875" />
         <entry key="..\:/Apps 2021/HealthIt/app/src/main/res/layout/template_news_item.xml" value="0.33" />

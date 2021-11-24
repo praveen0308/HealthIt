@@ -3,6 +3,7 @@ package com.jmm.healthit.ui.dashboard;
 import static com.jmm.healthit.network.NewsApiClient.API_KEY;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -103,7 +104,9 @@ public class NewsFragment extends Fragment implements NewsAdapter.NewsAdapterInt
 
     @Override
     public void onItemClick(ArticlesItem item) {
-
+        Intent intent = new Intent(getActivity(),NewsInDetail.class);
+        intent.putExtra("url",item.getUrl());
+        startActivity(intent);
     }
     private void showLoading(boolean visibility){
         if (visibility) progressBar.show();

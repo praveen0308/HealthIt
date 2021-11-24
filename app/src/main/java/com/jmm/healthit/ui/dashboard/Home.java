@@ -4,6 +4,8 @@ import static com.jmm.healthit.network.NewsApiClient.API_KEY;
 import static com.jmm.healthit.network.WeatherApiClient.WEATHER_API_KEY;
 import static com.jmm.healthit.utils.Extensions.fromListToSet;
 
+import android.app.AlarmManager;
+import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -17,6 +19,7 @@ import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
 import android.os.Handler;
+import android.os.SystemClock;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
@@ -47,6 +50,7 @@ import com.jmm.healthit.network.WeatherApiClient;
 import com.jmm.healthit.network.WeatherApiService;
 import com.jmm.healthit.ui.disease.DiseaseDetail;
 import com.jmm.healthit.ui.welcome.SignIn;
+import com.jmm.healthit.utils.AlarmReceiver;
 import com.jmm.healthit.utils.PreferenceUtils;
 import com.jmm.healthit.utils.ProgressBarHandler;
 
@@ -70,6 +74,10 @@ public class Home extends Fragment implements DiseaseWatchListAdapter.DiseaseAda
     private Handler mHandler;
     private DiseaseWatchListAdapter rvAdapter;
     private NavController navController;
+
+
+    private AlarmManager alarmMgr;
+    private PendingIntent alarmIntent;
 
     @Override
     public void onAttach(@NonNull Context context) {
@@ -96,27 +104,44 @@ public class Home extends Fragment implements DiseaseWatchListAdapter.DiseaseAda
     public void onDestroyView() {
         super.onDestroyView();
         binding = null;
-        stopRepeatingTask();
+//        stopRepeatingTask();
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        startRepeatingTask();
+//        startRepeatingTask();
         setAqiLayout();
         setReminderLayout();
         setupRvData();
         getCurrentWeather();
+        setQuote();
         binding.tvGreeting.setText("Hello "+ PreferenceUtils.getUsername(getContext()));
 
+
+        alarmMgr = (AlarmManager)getContext().getSystemService(Context.ALARM_SERVICE);
+        Intent intent = new Intent(getContext(), AlarmReceiver.class);
+        alarmIntent = PendingIntent.getBroadcast(getContext(), 0, intent, 0);
+
+        alarmMgr.set(AlarmManager.ELAPSED_REALTIME_WAKEUP,
+                SystemClock.elapsedRealtime() + 10 * 1000, alarmIntent); //this alarm for example is set for the next minute
         binding.etSearch.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
                 if(actionId== EditorInfo.IME_ACTION_SEARCH){
-                    Intent intent = new Intent(requireActivity(),DiseaseDetail.class);
-                    intent.putExtra("diseaseName",v.getText().toString().trim());
-                    startActivity(intent);
+
+                    String diseaseName = v.getText().toString().trim();
+
+                    if (diseaseName.length()>2){
+                        binding.etSearch.setText("");
+                        Intent intent = new Intent(requireActivity(),DiseaseDetail.class);
+                        intent.putExtra("diseaseName",diseaseName.substring(0, 1).toUpperCase() + diseaseName.substring(1));
+                        startActivity(intent);
+                    }else {
+                        Toast.makeText(getContext(), "Enter valid disease name..", Toast.LENGTH_SHORT).show();
+                    }
+
                 }
                 return false;
             }
@@ -144,6 +169,8 @@ public class Home extends Fragment implements DiseaseWatchListAdapter.DiseaseAda
                     Log.d(TAG, "onResponse: "+response.body().getLocation().getRegion());
                     binding.layoutAqi.tvTitle.setText(String.valueOf(response.body().getCurrent().getAirQuality().getPm10()));
                     binding.layoutAqi.tvDescription.setText(String.valueOf(response.body().getCurrent().getCondition().getText()));
+                    binding.layoutAqi.tvCityName.setText(PreferenceUtils.getCity(getContext()));
+                    binding.layoutAqi.tvCityName.setVisibility(View.VISIBLE);
                 }
 
                 getUserWatchlist();
@@ -189,18 +216,21 @@ public class Home extends Fragment implements DiseaseWatchListAdapter.DiseaseAda
         binding.rvDisease.setAdapter(rvAdapter);
     }
 
+    private void setQuote(){
+        String[] quotes = getResources().getStringArray(R.array.quotes);
+        Random r = new Random();
+        int low = 0;
+        int high = quotes.length-1;
+        int result = r.nextInt(high-low) + low;
+
+        binding.layoutFact.tvMessage.setText(quotes[result]);
+    }
 
     Runnable mStatusChecker = new Runnable() {
         @Override
         public void run() {
             try {
-                String[] quotes = getResources().getStringArray(R.array.quotes);
-                Random r = new Random();
-                int low = 0;
-                int high = quotes.length-1;
-                int result = r.nextInt(high-low) + low;
-
-                binding.layoutFact.tvMessage.setText(quotes[result]);
+               setQuote();
             } finally {
 
                 mHandler.postDelayed(mStatusChecker, mInterval);

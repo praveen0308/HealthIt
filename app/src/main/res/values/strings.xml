@@ -46,24 +46,14 @@
     </string-array>
     <string-array name="cities">
         <item>Mumbai</item>
-        <item>Navi Mumbai</item>
-        <item>Pune</item>
-        <item>Nashik</item>
-        <item>Kolhapur</item>
-        <item>Solapur</item>
+        <item>Chennai</item>
+        <item>Bengaluru</item>
         <item>Delhi</item>
         <item>Varanasi</item>
-        <item>Ranchi</item>
-        <item>Ujjain</item>
-        <item>Ahmedabad</item>
-        <item>Prayagraj</item>
-        <item>Patna</item>
-        <item>Aurangabad</item>
-        <item>Ayodhya</item>
-        <item>Darjeeling</item>
-        <item>Chennai</item>
+        <item>Navi Mumbai</item>
+        <item>Pune</item>
         <item>Kolkata</item>
-        <item>Bengaluru</item>
+
     </string-array>
 
     <string-array name="gender">
