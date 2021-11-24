@@ -5,8 +5,9 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.VIBRATE" />
-    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
-    <uses-permission android:name="com.android.alarm.permission.SET_ALARM"/>
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -16,6 +17,9 @@
         android:theme="@style/Theme.HealthIt"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".ui.dashboard.SearchDisease"
+            android:exported="true" />
+        <activity
             android:name=".ui.dashboard.NewsInDetail"
             android:exported="true" />
         <activity
@@ -23,8 +27,8 @@
             android:exported="true" />
         <activity
             android:name=".ui.dashboard.MainDashboard"
-            android:windowSoftInputMode="adjustPan"
-            android:exported="true" />
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan" />
         <activity
             android:name=".ui.disease.DiseaseDetail"
             android:exported="true" />
@@ -38,15 +42,14 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name=".utils.AlarmReceiver"
+        <receiver
+            android:name=".utils.AlarmReceiver"
             android:enabled="true"
-            android:exported="true">
-        </receiver>
-
-        <receiver android:name=".utils.DismissBroadcast"
+            android:exported="true"></receiver>
+        <receiver
+            android:name=".utils.DismissBroadcast"
             android:enabled="true"
-            android:exported="true">
-        </receiver>
+            android:exported="true"></receiver>
     </application>
 
 </manifest>

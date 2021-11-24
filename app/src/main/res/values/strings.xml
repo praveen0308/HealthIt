@@ -62,5 +62,22 @@
         <item>Other</item>
 
     </string-array>
-
+    <string-array name="diseases">
+        <item>Stroke</item>
+        <item>Fibromyalgia</item>
+        <item>Cirrhosis</item>
+        <item>Hypertension</item>
+        <item>Multiple sclerosis</item>
+        <item>Migraine</item>
+        <item>Insomnia</item>
+        <item>Tuberculosis</item>
+        <item>Arthritis</item>
+        <item>Diabetes</item>
+        <item>Depression</item>
+        <item>Alzheimers</item>
+        <item>Asthma</item>
+        <item>Covid19</item>
+        <item>Amnesia</item>
+        <item>Diarrhea</item>
+    </string-array>
 </resources>

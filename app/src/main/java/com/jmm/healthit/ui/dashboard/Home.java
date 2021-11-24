@@ -118,12 +118,12 @@ public class Home extends Fragment implements DiseaseWatchListAdapter.DiseaseAda
         getCurrentWeather();
         setQuote();
         binding.tvGreeting.setText("Hello "+ PreferenceUtils.getUsername(getContext()));
-
-        /*alarmMgr = (AlarmManager)getContext().getSystemService(Context.ALARM_SERVICE);
-        Intent intent = new Intent(getContext(), AlarmReceiver.class);
-        alarmIntent = PendingIntent.getBroadcast(getContext(), 0, intent, 0);
-
-        alarmMgr.set(AlarmManager.ELAPSED_REALTIME_WAKEUP, SystemClock.elapsedRealtime() + 10 * 1000, alarmIntent); */
+        binding.etSearch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(requireActivity(),SearchDisease.class));
+            }
+        });
         binding.etSearch.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
