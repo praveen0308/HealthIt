@@ -5,12 +5,13 @@
       <map>
         <entry key="..\:/Apps 2021/HealthIt/app/src/main/res/drawable/bg_news_item.xml" value="0.20833333333333334" />
         <entry key="..\:/Apps 2021/HealthIt/app/src/main/res/drawable/bg_search_view.xml" value="0.20833333333333334" />
+        <entry key="..\:/Apps 2021/HealthIt/app/src/main/res/drawable/bg_spinner.xml" value="0.18518518518518517" />
         <entry key="..\:/Apps 2021/HealthIt/app/src/main/res/drawable/ic_baseline_stars_24.xml" value="0.18518518518518517" />
         <entry key="..\:/Apps 2021/HealthIt/app/src/main/res/layout/activity_disease_detail.xml" value="0.25" />
         <entry key="..\:/Apps 2021/HealthIt/app/src/main/res/layout/activity_main.xml" value="0.1921875" />
         <entry key="..\:/Apps 2021/HealthIt/app/src/main/res/layout/activity_main_dashboard.xml" value="0.1921875" />
         <entry key="..\:/Apps 2021/HealthIt/app/src/main/res/layout/activity_news_in_detail.xml" value="0.17083333333333334" />
-        <entry key="..\:/Apps 2021/HealthIt/app/src/main/res/layout/activity_set_reminder.xml" value="0.1" />
+        <entry key="..\:/Apps 2021/HealthIt/app/src/main/res/layout/activity_set_reminder.xml" value="0.22" />
         <entry key="..\:/Apps 2021/HealthIt/app/src/main/res/layout/fragment_disease_description_dialog.xml" value="0.17083333333333334" />
         <entry key="..\:/Apps 2021/HealthIt/app/src/main/res/layout/fragment_exercise.xml" value="0.17083333333333334" />
         <entry key="..\:/Apps 2021/HealthIt/app/src/main/res/layout/fragment_food_tips.xml" value="0.17083333333333334" />

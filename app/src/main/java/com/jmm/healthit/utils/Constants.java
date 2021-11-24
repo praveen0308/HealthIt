@@ -18,6 +18,14 @@ public class Constants {
 
     public static int ALARM_NOTIFICATION_ID = 101;
 
+    // REMINDER UTILS
+
+    public static String WATER_REMINDER_STATUS = "waterReminderStatus";
+    public static String MEDICINE_REMINDER_STATUS = "medicineReminderStatus";
+    public static String WATER_REMINDER_TIME = "waterReminderTime";
+    public static String MEDICINE_REMINDER_HOUR = "medicineReminderHour";
+    public static String MEDICINE_REMINDER_MINUTE = "medicineReminderMinute";
+
 
 
 }

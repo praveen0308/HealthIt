@@ -119,13 +119,11 @@ public class Home extends Fragment implements DiseaseWatchListAdapter.DiseaseAda
         setQuote();
         binding.tvGreeting.setText("Hello "+ PreferenceUtils.getUsername(getContext()));
 
-
-        alarmMgr = (AlarmManager)getContext().getSystemService(Context.ALARM_SERVICE);
+        /*alarmMgr = (AlarmManager)getContext().getSystemService(Context.ALARM_SERVICE);
         Intent intent = new Intent(getContext(), AlarmReceiver.class);
         alarmIntent = PendingIntent.getBroadcast(getContext(), 0, intent, 0);
 
-        alarmMgr.set(AlarmManager.ELAPSED_REALTIME_WAKEUP,
-                SystemClock.elapsedRealtime() + 10 * 1000, alarmIntent); //this alarm for example is set for the next minute
+        alarmMgr.set(AlarmManager.ELAPSED_REALTIME_WAKEUP, SystemClock.elapsedRealtime() + 10 * 1000, alarmIntent); */
         binding.etSearch.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
             public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
