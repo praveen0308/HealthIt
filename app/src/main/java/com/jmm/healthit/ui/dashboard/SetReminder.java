@@ -11,6 +11,7 @@ import android.view.View;
 import com.jmm.healthit.R;
 import com.jmm.healthit.databinding.ActivityMainDashboardBinding;
 import com.jmm.healthit.databinding.ActivitySetReminderBinding;
+import com.jmm.healthit.utils.MusicControl;
 
 public class SetReminder extends AppCompatActivity {
 
@@ -21,13 +22,8 @@ public class SetReminder extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivitySetReminderBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        binding.imageView2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                finish();
-            }
-        });
+        MusicControl.getInstance(getApplicationContext()).stopMusic();
+        binding.imageView2.setOnClickListener(view -> finish());
 
 
     }
