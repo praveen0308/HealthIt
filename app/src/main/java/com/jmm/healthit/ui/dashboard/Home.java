@@ -165,22 +165,23 @@ public class Home extends Fragment implements DiseaseWatchListAdapter.DiseaseAda
 
                 if (response.body()!=null){
                     Log.d(TAG, "onResponse: "+response.body().getLocation().getRegion());
-                    binding.layoutAqi.tvTitle.setText(String.valueOf(response.body().getCurrent().getAirQuality().getPm10()));
+                    double pf10 = Math.round(response.body().getCurrent().getAirQuality().getPm10() * 100.0) / 100.0;
+                    binding.layoutAqi.tvTitle.setText(String.valueOf(pf10));
                     binding.layoutAqi.tvDescription.setText(String.valueOf(response.body().getCurrent().getCondition().getText()));
                     binding.layoutAqi.tvCityName.setText(PreferenceUtils.getCity(getContext()));
                     binding.layoutAqi.tvCityName.setVisibility(View.VISIBLE);
                 }
 
                 getUserWatchlist();
-                /*RequestOptions options = new RequestOptions()
+                RequestOptions options = new RequestOptions()
                         .centerCrop()
                         .placeholder(R.drawable.ic_baseline_insert_photo_24)
                         .error(R.drawable.ic_baseline_error_24);
 
                 Glide.with(binding.getRoot().getContext())
-                        .load(response.body().getCurrent().getCondition().getIcon())
+                        .load("http:" +response.body().getCurrent().getCondition().getIcon())
                         .apply(options)
-                        .into(binding.layoutAqi.icImage);*/
+                        .into(binding.layoutAqi.icImage);
             }
 
             @Override
