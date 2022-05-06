@@ -29,5 +29,14 @@
         android:id="@+id/workout"
         android:name="com.jmm.healthit.ui.dashboard.Workout"
         android:label="fragment_workout"
-        tools:layout="@layout/fragment_workout" />
+        tools:layout="@layout/fragment_workout" >
+        <action
+            android:id="@+id/action_workout_to_dayWorkout"
+            app:destination="@id/dayWorkout" />
+    </fragment>
+    <fragment
+        android:id="@+id/dayWorkout"
+        android:name="com.jmm.healthit.ui.dashboard.DayWorkout"
+        android:label="fragment_day_workout"
+        tools:layout="@layout/fragment_day_workout" />
 </navigation>

@@ -11,14 +11,13 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.jmm.healthit.R;
-import com.jmm.healthit.databinding.FragmentCalculatorScreenBinding;
-import com.jmm.healthit.databinding.FragmentWorkoutBinding;
+import com.jmm.healthit.databinding.FragmentDayWorkoutBinding;
+
+public class DayWorkout extends Fragment {
 
 
-public class Workout extends Fragment {
-
-   private FragmentWorkoutBinding binding;
-    public Workout() {
+    private FragmentDayWorkoutBinding binding;
+    public DayWorkout() {
         // Required empty public constructor
     }
 
@@ -27,7 +26,7 @@ public class Workout extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        binding = FragmentWorkoutBinding.inflate(inflater, container, false);
+        binding = FragmentDayWorkoutBinding.inflate(inflater, container, false);
         return binding.getRoot();
     }
 

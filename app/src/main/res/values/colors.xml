@@ -12,6 +12,7 @@
     <color name="transparent">#00000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="primary">#48A4AA</color>
+    <color name="black65">#A6000000</color>
 
 
 </resources>

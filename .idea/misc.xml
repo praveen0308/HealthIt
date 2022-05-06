@@ -32,8 +32,14 @@
         <entry key="..\:/Apps 2021/HealthIt/app/src/main/res/layout/template_starred_disease.xml" value="0.1921875" />
         <entry key="..\:/Apps 2021/HealthIt/app/src/main/res/layout/template_title_image_desc.xml" value="0.22" />
         <entry key="..\:/Apps 2021/HealthIt/app/src/main/res/menu/menu_nav.xml" value="0.1921875" />
+        <entry key="..\:/Users/brsap/AndroidStudioProjects/HealthIt/app/src/main/res/layout/activity_disease_detail.xml" value="0.67" />
         <entry key="..\:/Users/brsap/AndroidStudioProjects/HealthIt/app/src/main/res/layout/fragment_calculator_screen.xml" value="0.1921875" />
+        <entry key="..\:/Users/brsap/AndroidStudioProjects/HealthIt/app/src/main/res/layout/fragment_day_workout.xml" value="0.1921875" />
+        <entry key="..\:/Users/brsap/AndroidStudioProjects/HealthIt/app/src/main/res/layout/fragment_workout.xml" value="0.1921875" />
         <entry key="..\:/Users/brsap/AndroidStudioProjects/HealthIt/app/src/main/res/layout/template_calculator_widget.xml" value="0.1921875" />
+        <entry key="..\:/Users/brsap/AndroidStudioProjects/HealthIt/app/src/main/res/layout/template_workout_day_item.xml" value="0.1921875" />
+        <entry key="..\:/Users/brsap/AndroidStudioProjects/HealthIt/app/src/main/res/layout/template_workout_item.xml" value="0.1921875" />
+        <entry key="..\:/Users/brsap/AndroidStudioProjects/HealthIt/app/src/main/res/layout/workout_progress_summary_layout.xml" value="0.1921875" />
         <entry key="..\:/Users/brsap/AndroidStudioProjects/HealthIt/app/src/main/res/menu/menu_nav.xml" value="0.1921875" />
       </map>
     </option>
