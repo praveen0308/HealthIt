@@ -20,4 +20,14 @@
         android:name="com.jmm.healthit.ui.dashboard.Profile"
         android:label="fragment_profile"
         tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/calculatorScreen"
+        android:name="com.jmm.healthit.ui.dashboard.CalculatorScreen"
+        android:label="fragment_calculator_screen"
+        tools:layout="@layout/fragment_calculator_screen" />
+    <fragment
+        android:id="@+id/workout"
+        android:name="com.jmm.healthit.ui.dashboard.Workout"
+        android:label="fragment_workout"
+        tools:layout="@layout/fragment_workout" />
 </navigation>

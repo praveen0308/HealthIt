@@ -6,11 +6,20 @@
     android:title="News"
     android:icon="@drawable/ic_baseline_assignment_24"
     />
-
+    <item
+        android:id="@+id/workout"
+        android:title="Workout"
+        android:icon="@drawable/ic_baseline_self_improvement_24"
+        />
     <item
         android:id="@+id/home"
         android:title="Home"
         android:icon="@drawable/ic_baseline_home_24"
+        />
+    <item
+        android:id="@+id/calculatorScreen"
+        android:title="Calculator"
+        android:icon="@drawable/ic_baseline_calculate_24"
         />
 
     <item
