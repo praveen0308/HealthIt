@@ -36,7 +36,11 @@ public class CalculatorScreen extends Fragment implements CalculatorItemsAdapter
     public CalculatorScreen() {
         // Required empty public constructor
     }
-
+    @Override
+    public void onDestroyView() {
+        super.onDestroyView();
+        binding = null;
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

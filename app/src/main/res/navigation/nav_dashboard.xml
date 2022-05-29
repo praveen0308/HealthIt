@@ -45,7 +45,11 @@
         android:id="@+id/dayWorkout"
         android:name="com.jmm.healthit.ui.dashboard.DayWorkout"
         android:label="fragment_day_workout"
-        tools:layout="@layout/fragment_day_workout" />
+        tools:layout="@layout/fragment_day_workout" >
+        <action
+            android:id="@+id/action_dayWorkout_to_workoutAction"
+            app:destination="@id/workoutAction" />
+    </fragment>
     <fragment
         android:id="@+id/BMIFragment"
         android:name="com.jmm.healthit.ui.dashboard.BMIFragment"
@@ -56,4 +60,9 @@
         android:name="com.jmm.healthit.ui.dashboard.BloodAlcoholContent"
         android:label="fragment_blood_alcohol_content"
         tools:layout="@layout/fragment_blood_alcohol_content" />
+    <fragment
+        android:id="@+id/workoutAction"
+        android:name="com.jmm.healthit.ui.dashboard.WorkoutAction"
+        android:label="fragment_workout_action"
+        tools:layout="@layout/fragment_workout_action" />
 </navigation>

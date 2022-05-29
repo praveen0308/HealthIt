@@ -42,6 +42,7 @@
             android:id="@+id/iv_disease_watchlist"
             android:layout_width="32dp"
             android:layout_height="32dp"
+            android:layout_marginEnd="8dp"
             android:src="@drawable/ic_baseline_star_border_24"
             app:layout_constraintEnd_toStartOf="@+id/iv_doctors"
             app:layout_constraintTop_toTopOf="parent" />
@@ -52,7 +53,7 @@
             android:layout_height="32dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_round_account_circle_24" />
+            app:srcCompat="@drawable/ic_doctor" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.google.android.material.tabs.TabLayout
