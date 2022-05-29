@@ -57,7 +57,12 @@ public class DiseaseDetail extends AppCompatActivity {
         binding = ActivityDiseaseDetailBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         setupViewPagerWithTabs();
+        binding.ivDoctors.setOnClickListener(view -> {
+            String map = "http://maps.google.co.in/maps?q=doctor near me";
 
+            Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(map));
+            startActivity(intent);
+        });
         binding.ivDiseaseInfo.setOnClickListener(view -> {
             DiseaseDescriptionDialog dialog = new DiseaseDescriptionDialog();
             dialog.show(getSupportFragmentManager(),dialog.getTag());

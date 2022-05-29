@@ -24,7 +24,14 @@
         android:id="@+id/calculatorScreen"
         android:name="com.jmm.healthit.ui.dashboard.CalculatorScreen"
         android:label="fragment_calculator_screen"
-        tools:layout="@layout/fragment_calculator_screen" />
+        tools:layout="@layout/fragment_calculator_screen" >
+        <action
+            android:id="@+id/action_calculatorScreen_to_BMIFragment"
+            app:destination="@id/BMIFragment" />
+        <action
+            android:id="@+id/action_calculatorScreen_to_bloodAlcoholContent"
+            app:destination="@id/bloodAlcoholContent" />
+    </fragment>
     <fragment
         android:id="@+id/workout"
         android:name="com.jmm.healthit.ui.dashboard.Workout"
@@ -39,4 +46,14 @@
         android:name="com.jmm.healthit.ui.dashboard.DayWorkout"
         android:label="fragment_day_workout"
         tools:layout="@layout/fragment_day_workout" />
+    <fragment
+        android:id="@+id/BMIFragment"
+        android:name="com.jmm.healthit.ui.dashboard.BMIFragment"
+        android:label="fragment_b_m_i"
+        tools:layout="@layout/fragment_b_m_i" />
+    <fragment
+        android:id="@+id/bloodAlcoholContent"
+        android:name="com.jmm.healthit.ui.dashboard.BloodAlcoholContent"
+        android:label="fragment_blood_alcohol_content"
+        tools:layout="@layout/fragment_blood_alcohol_content" />
 </navigation>

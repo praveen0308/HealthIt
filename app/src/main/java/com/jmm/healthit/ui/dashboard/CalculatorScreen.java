@@ -5,6 +5,9 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.NavController;
+import androidx.navigation.Navigation;
+import androidx.navigation.fragment.NavHostFragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
@@ -28,6 +31,8 @@ public class CalculatorScreen extends Fragment implements CalculatorItemsAdapter
     private FragmentCalculatorScreenBinding binding;
 
     private CalculatorItemsAdapter calculatorItemsAdapter;
+
+    private NavController navController;
     public CalculatorScreen() {
         // Required empty public constructor
     }
@@ -44,6 +49,8 @@ public class CalculatorScreen extends Fragment implements CalculatorItemsAdapter
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        navController = Navigation.findNavController(requireActivity(),R.id.nav_host_main_dashboard);
+
         setupRvItems();
     }
 
@@ -59,13 +66,12 @@ public class CalculatorScreen extends Fragment implements CalculatorItemsAdapter
         List<WidgetModel> items = new ArrayList<>();
 
         items.add(new WidgetModel("Blood Alcohol Content",R.drawable.ic_blood_acohol, CalculatorOption.bloodAlcoholContent));
-        items.add(new WidgetModel("Blood Pressure",R.drawable.ic_blood_pressure, CalculatorOption.bloodPressure));
         items.add(new WidgetModel("Body Mass Index",R.drawable.ic_bmi, CalculatorOption.bmi));
+        /*items.add(new WidgetModel("Blood Pressure",R.drawable.ic_blood_pressure, CalculatorOption.bloodPressure));
         items.add(new WidgetModel("Body Fat",R.drawable.ic_body_fat, CalculatorOption.bodyFat));
         items.add(new WidgetModel("Blood Volume",R.drawable.ic_blood_volume, CalculatorOption.bloodVolume));
         items.add(new WidgetModel("Heart Rate",R.drawable.ic_baseline_favorite_24, CalculatorOption.heartRate));
-        items.add(new WidgetModel("Blood Sugar",R.drawable.ic_blood_sugar, CalculatorOption.bloodSugar));
-
+        items.add(new WidgetModel("Blood Sugar",R.drawable.ic_blood_sugar, CalculatorOption.bloodSugar));*/
         return items;
 
     }
@@ -74,10 +80,12 @@ public class CalculatorScreen extends Fragment implements CalculatorItemsAdapter
     public void onItemClick(WidgetModel item) {
         switch (item.getType()){
             case bloodAlcoholContent:
+                navController.navigate(CalculatorScreenDirections.actionCalculatorScreenToBloodAlcoholContent());
                 break;
             case bloodPressure:
                 break;
             case bmi:
+                navController.navigate(CalculatorScreenDirections.actionCalculatorScreenToBMIFragment());
                 break;
             case bodyFat:
                 break;

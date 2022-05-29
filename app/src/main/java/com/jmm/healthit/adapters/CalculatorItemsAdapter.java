@@ -42,8 +42,8 @@ public class CalculatorItemsAdapter extends RecyclerView.Adapter<CalculatorItems
 
 
     public void setItems(List<WidgetModel> items){
-        items.clear();
-        items.addAll(items);
+        options.clear();
+        options.addAll(items);
         notifyDataSetChanged();
     }
     static class CalculatorItemViewHolder extends RecyclerView.ViewHolder{
